@@ -1,6 +1,7 @@
 # **BLOBIFIER - LITE**
 ## **For Voron 2.4 350mm only**
 
+**This mod is specifically made for my setup. It may not work with your setup. Use it with caution.** 
 * This version of blobifer don't use  :
    * the servo
    * the tray
