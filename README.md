@@ -17,3 +17,10 @@
   * It is possible to adjust the purge volume while printing.
   * The start up array can be filled up with a macro that take the value from a matrix that can be set up with a spreadsheet.
 
+
+
+
+
+
+
+* Gantry mounted burush and wiper are based on : https://www.thingiverse.com/thing:590448
