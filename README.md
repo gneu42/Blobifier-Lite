@@ -4,7 +4,7 @@
 
 * **My setup is as follow :** 
   * Printer : Voron 2.4 350mm with stealthburner and Peatus Dragon SF.
-    * the front part of the stealthburner is modified to optimize the kick on the blob into the external bucket.
+    * the front part of the stealthburner is modified to optimize the kick of the blob into the external bucket.
   * ERCF 13 gates
   * Filametrix with modified lever and depressor on servo
   * Blobifier lite version
@@ -18,9 +18,18 @@
     * MMU_START_CHECK
     * MMU_END
   * I set HH as follow : 
-    * restore position is set  to "none". I find it is better to let the slicer go where it needs to go.
-    * the post load is "BLOBIFIER" or "" depending if I want to use the wipe tower
-    * the pre-load extension is set to "BLOBIFIER_PARK" or "" for the same reason
+    *  enable_park: **False**
+    *  enable_park_standalone: **False**
+    *  restore_xy_pos: **'"none"'**
+       *  I find it is better to let the slicer go where it needs to go.
+    *  park_after_form_tip: **False**
+    *  restore_position: **True**
+    *  user_pre_unload_extension: **'"BLOBIFIER_PARK"'**
+    *  user_pre_load_extension: **'"PRE_LOAD"'**
+       *  This force the toolhead to go at BLOBIFIER_PARK position for the first filament load
+    *  user_post_load_extension: **'"BLOBIFIER"'**
+   
+       
 
 * **In this lite version of blobifer I don't use :**
    * the servo
@@ -39,9 +48,11 @@
       *  This allow to print the same model in different color using the Happy Hare Tool To Gate mapping function without re-slicing the STL.
    *  macro to adjust the purge volume any time, even during printing
    *  a gantry mounted brush and wiper based on this : https://www.thingiverse.com/thing:590448
+      *  The wiper is made from 2 pieces of silicone rubber 1mm thick
   
 * **I make the blob directly on the bed of a Voron 2.4 350mm.**
   * I use a ramp to get the blob out of the printer into an external bucket
+  * I use the toolhead to kick the blob out of the bed into the external bucket
   * STLs are made for my printer, there are no STL for other printers.
 
 
