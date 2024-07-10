@@ -3,16 +3,24 @@
 ### **I made this repo public, but it is specifically made for my setup. It may or may not work with your setup. Use it at your own risk. I will not make changes to accomodate your setup.** 
 
 * **My setup is as follow :** 
-  * Printer : Voron 2.4 350mm with stealthburner 
+  * Printer : Voron 2.4 350mm with stealthburner and Peatus Dragon SF.
     * the front part of the stealthburner is modified to optimize the kick on the blob into the external bucket.
   * ERCF 13 gates
-  * Filametrix
+  * Filametrix with modified lever and depressor on servo
   * Blobifier lite version
 * **My workflow is as follow :**
   * gates 0 to 9 have always the same filament (PLA black to white following the standard color code)
   * gates 10 to 12 have no dedicated filament. They can be anything depending what I need to print.
   * I use ERCF more as a color/filament selector than for multicolor print.
   * I often print the same gcode in different colors using the TTG function of HH. (this is why I don't use the slicer purge volume)
+  * Since I don't use the slicer purge volumes, I don't use the following features from HH : 
+    * MMU_START_SETUP
+    * MMU_START_CHECK
+    * MMU_END
+  * I set HH as follow : 
+    * restore position is set  to "none". I find it is better to let the slicer go where it needs to go.
+    * the post load is "BLOBIFIER" or "" depending if I want to use the wipe tower
+    * the pre-load extension is set to "BLOBIFIER_PARK" or "" for the same reason
 
 * **In this lite version of blobifer I don't use :**
    * the servo
