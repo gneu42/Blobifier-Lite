@@ -46,7 +46,7 @@
    *  the purge volume can be initialized manually or by copy/paste from a spreadsheet 
    *  a gate to gate instead of the from tool to tool purge volume
       *  This allow to print the same model in different color using the Happy Hare Tool To Gate mapping function without re-slicing the STL.
-   *  macro to adjust the purge volume at any time, even during printing
+   *  macros to adjust the purge volume at any time, even during printing
    *  a gantry mounted brush and wiper based on this : https://www.thingiverse.com/thing:590448
       *  The wiper is made from 2 pieces of silicone rubber 1mm thick
   
@@ -54,6 +54,7 @@
   * I use a ramp to get the blob out of the printer into an external bucket
   * I use the toolhead to kick the blob out of the bed into the external bucket
   * STLs are made for my printer, there are no STL for other printers.
+  * CAD files are provided in case you want to make modifications for you setup 
 
 
 
